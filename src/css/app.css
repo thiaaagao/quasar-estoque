@@ -1,1 +1,11 @@
 /* app global css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+#app{
+    font-family: 'Poppins', sans-serif;
+}

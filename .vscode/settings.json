@@ -11,5 +11,10 @@
     "javascriptreact",
     "typescript",
     "vue"
+  ],
+  "cSpell.words": [
+    "Almoxarifado",
+    "Gerenciador",
+    "SGAO"
   ]
 }

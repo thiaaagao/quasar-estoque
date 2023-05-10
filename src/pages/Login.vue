@@ -41,12 +41,10 @@
           color="primary"
           class="full-width"
           icon-right="send"
-          flat
           rounded
           to="/register"
           />
         </div>
-
       </div>
     </q-form>
   </q-page>

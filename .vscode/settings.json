@@ -20,5 +20,8 @@
     "composables",
     "Gerenciador",
     "SGAO"
-  ]
+  ],
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  }
 }

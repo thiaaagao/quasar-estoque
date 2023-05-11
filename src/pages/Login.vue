@@ -35,7 +35,7 @@
         </div>
 
         <!-- Btn register -->
-        <div class="full-width">
+        <div class="full-width q-gutter-y-sm">
           <q-btn
           label="Cadastrar"
           color="primary"
@@ -43,6 +43,14 @@
           icon-right="send"
           rounded
           to="/register"
+          />
+          <!-- Reset password -->
+          <q-btn
+            label="Esqueceu sua senha?"
+            color="primary"
+            class="full-width"
+            flat
+            size="sm"
           />
         </div>
       </div>

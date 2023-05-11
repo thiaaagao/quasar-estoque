@@ -3,7 +3,7 @@
     <q-header elevated>
       <q-toolbar>
         <q-toolbar-title>
-          SGAO - Gerenciador de Almoxarifado
+          Gerenciador de Estoque
         </q-toolbar-title>
       </q-toolbar>
     </q-header>

@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          SGAO - Gerenciador de Almoxarifado
+          Sistema de Estoque
         </q-toolbar-title>
       </q-toolbar>
     </q-header>

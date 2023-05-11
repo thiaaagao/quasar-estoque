@@ -76,7 +76,6 @@ export default defineComponent({
         alert(error.message)
       }
     }
-
     return {
       form,
       handleLogin

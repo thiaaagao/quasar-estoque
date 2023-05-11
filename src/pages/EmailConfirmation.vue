@@ -11,6 +11,10 @@
         <!--div class="text-h8"><strong>Email:</strong> {{ $route.query.email }}</!--div-->
           <div class="text-subtitle">Por gentileza, confirme a ativação do acesso através do email cadastrado: <strong>{{ $route.query.email }}</strong></div>
       </q-card-section>
+
+      <q-card-actions vertical align="center">
+        <q-btn push color="white" text-color="blue" class="text-h8 white" to='/login'><strong>Sair</strong></q-btn>
+      </q-card-actions>
     </q-card>
     </q-page>
 </template>

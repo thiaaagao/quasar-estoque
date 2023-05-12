@@ -60,7 +60,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
-import useAuthUser from 'src/composables/UserAuthUser'
+import useAuthUser from 'src/composables/UseAuthUser'
 import { useRouter } from 'vue-router'
 
 export default defineComponent({

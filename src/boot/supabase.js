@@ -11,6 +11,6 @@ supabase.auth.onAuthStateChange((event, session) => {
   console.log(session, event)
   // user.value = session?.user || null
 })
-export default function useSupabase() {
+export default function useSupabase () {
   return { supabase }
 }

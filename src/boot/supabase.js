@@ -8,7 +8,8 @@ const supabase = createClient(supabaseUrl, supabaseKey)
 // state session
 supabase.auth.onAuthStateChange((event, session) => {
   const { user } = useAuthUser()
-  // console.log(session, event)
+  // console.log(session)
+  // console.log(event)
   user.value = session?.user || null
 })
 export default function useSupabase () {

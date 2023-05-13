@@ -22,7 +22,7 @@
         <!-- Input -->
 
         <!-- Btn Login-->
-        <div class="full-width q-pt-md">
+        <div class="full-width">
           <q-btn
           label="Login"
           color="primary"
@@ -35,7 +35,7 @@
         </div>
 
         <!-- Btn register -->
-        <div class="full-width q-pt-md">
+        <div class="full-width">
           <q-btn
           label="Cadastrar"
           color="primary"
@@ -44,7 +44,7 @@
           rounded
           to="/register"
           />
-          <div class="full-width">
+        <div class="full-width q-pt-md-4">
           <q-btn
           label="Esqueceu a sua senha?"
           color="primary"

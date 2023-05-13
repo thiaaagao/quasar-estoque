@@ -39,7 +39,7 @@
         </div>
           <div class="full-width q-pt-md-4">
           <q-btn
-          label="Login"
+          label="Voltar"
           color="primary"
           class="full-width"
           icon-right="login"

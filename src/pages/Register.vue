@@ -37,6 +37,17 @@
           rounded
           />
         </div>
+          <div class="full-width q-pt-md-4">
+          <q-btn
+          label="Login"
+          color="primary"
+          class="full-width"
+          icon-right="login"
+          outline
+          rounded
+          :to="{ name: 'login' }"
+          />
+        </div>
       </div>
     </q-form>
   </q-page>

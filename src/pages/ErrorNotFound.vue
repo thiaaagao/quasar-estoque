@@ -28,4 +28,5 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'ErrorNotFound'
 })
+// Router 404 error, return console 404 browser
 </script>

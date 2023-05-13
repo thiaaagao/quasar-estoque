@@ -35,7 +35,7 @@
         </div>
 
         <!-- Btn register -->
-        <div class="full-width">
+        <div class="full-width q-pt-md">
           <q-btn
           label="Cadastrar"
           color="primary"
@@ -44,6 +44,15 @@
           rounded
           to="/register"
           />
+          <div class="full-width">
+          <q-btn
+          label="Esqueceu a sua senha?"
+          color="primary"
+          class="full-width"
+          flat
+          rounded
+          size="sm" />
+          </div>
         </div>
       </div>
     </q-form>

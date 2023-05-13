@@ -2,6 +2,7 @@ import { ref } from 'vue'
 import useSupabase from 'boot/supabase'
 
 const user = ref(null)
+
 export default function useAuthUser () {
   const { supabase } = useSupabase()
 
@@ -12,7 +13,7 @@ export default function useAuthUser () {
   }
 
   const loginWithSocialProvider = async (provider) => {
-    const { user, error } = await supabase.auth.signInWithPassword({ provider })
+    const { user, error } = await supabase.auth.signIn({ provider })
     if (error) throw error
     return user
   } // login with social provider

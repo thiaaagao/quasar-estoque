@@ -1,7 +1,7 @@
 <template>
   <q-page padding>
      <div v-if="user">
-        <div>Hello {{ user.username }}</div>
+        <div>Hello {{ user.email }}</div>
      </div>
   </q-page>
 </template>

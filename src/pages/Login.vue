@@ -80,7 +80,7 @@ export default defineComponent({
     const handleLogin = async () => {
       try {
         await login(form.value)
-        router.push({ name: 'me' })
+        router.push({ path: '/me' })
       } catch (error) {
         alert(error.message)
       }

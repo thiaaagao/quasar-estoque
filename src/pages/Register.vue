@@ -4,6 +4,7 @@
       <p class="col-12 text-h5 text-center">
         Área de Cadastro
       </p>
+
       <div class="col-md-4 col-sm-6 col-xs-10 q-gutter-y-md">
         <!-- Input -->
         <q-input
@@ -40,7 +41,7 @@
           <div class="full-width q-pt-md-4">
           <q-btn
           label="Voltar"
-          color="primary"
+          color="dark"
           class="full-width"
           icon-right="login"
           outline

@@ -3,7 +3,7 @@
           <q-header elevated>
             <q-toolbar>
               <q-toolbar-title>
-                Sistema de estoque
+                Sistema de Estoque
               </q-toolbar-title>
             </q-toolbar>
           </q-header>

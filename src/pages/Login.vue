@@ -20,9 +20,9 @@
           type="password"
         />
         <!-- Input -->
-
         <!-- Btn Login-->
-        <div class="full-width">
+        <!-- Btn register -->
+        <div class="full-width q-gutter-y-sm">
           <q-btn
           label="Login"
           color="primary"
@@ -32,10 +32,6 @@
           rounded
           type="submit"
           />
-        </div>
-
-        <!-- Btn register -->
-        <div class="full-width">
           <q-btn
           label="Cadastrar"
           color="primary"
@@ -44,17 +40,16 @@
           rounded
           to="/register"
           />
-        <div class="full-width q-pt-md-4">
           <q-btn
-          label="Esqueceu a sua senha?"
+          label="Esqueceu a sua senha ?"
           color="primary"
           class="full-width"
           flat
           rounded
+          to="/forgot-password"
           size="sm" />
           </div>
         </div>
-      </div>
     </q-form>
   </q-page>
 </template>

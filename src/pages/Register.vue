@@ -23,6 +23,7 @@
           label="Password"
           v-model="form.password"
           standout="bg-blue text-white"
+          type="password"
         />
         <!-- Input -->
 

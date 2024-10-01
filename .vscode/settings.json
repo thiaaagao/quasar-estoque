@@ -22,7 +22,7 @@
     "SGAO"
   ],
   "[vue]": {
-    "editor.defaultFormatter": ""
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": ""

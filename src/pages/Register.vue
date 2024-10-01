@@ -1,9 +1,7 @@
 <template>
   <q-page padding>
     <q-form class="row justify-center" @submit.prevent="handleRegister">
-      <p class="col-12 text-h5 text-center">
-        Área de Cadastro
-      </p>
+      <p class="col-12 text-h5 text-center">Área de Cadastro</p>
 
       <div class="col-md-4 col-sm-6 col-xs-10 q-gutter-y-md">
         <!-- Input -->
@@ -23,31 +21,56 @@
           label="Password"
           v-model="form.password"
           standout="bg-blue text-white"
-          type="password"
-        />
-        <!-- Input -->
+          :type="isPwd ? 'password' : 'text'"
+        >
+          <q-icon @click.stop.prevent="pass = null" class="cursor-pointer" />
+          <template v-slot:append>
+            <q-icon
+              :name="isPwd ? 'visibility_off' : 'visibility'"
+              @click="isPwd = !isPwd"
+              class="cursor-pointer"
+            />
+          </template>
+        </q-input>
+
+        <q-input
+          label="Confirm your password"
+          v-model="form.confirmPassword"
+          standout="bg-blue text-white"
+          :type="isPwdConfirm ? 'password' : 'text'"
+        >
+          <q-icon @click.stop.prevent="pass = null" class="cursor-pointer" />
+            <template v-slot:append>
+              <q-icon
+              :name="isPwdConfirm ? 'visibility_off':'visibility'"
+              @click="isPwdConfirm = !isPwdConfirm"
+              class="cursor-pointer"
+              />
+            </template>
+        </q-input>
+        <!--   Input -->
 
         <!-- Btn register -->
         <div class="full-width">
           <q-btn
-          label="Cadastrar"
-          color="primary"
-          class="full-width"
-          icon-right="send"
-          type="submit"
-          outlined
-          rounded
+            label="Cadastrar"
+            color="primary"
+            class="full-width"
+            icon-right="send"
+            type="submit"
+            outlined
+            rounded
           />
         </div>
-          <div class="full-width q-pt-md-4">
+        <div class="full-width q-pt-md-4">
           <q-btn
-          label="Voltar"
-          color="dark"
-          class="full-width"
-          icon-right="login"
-          outline
-          rounded
-          :to="{ name: 'login' }"
+            label="Voltar"
+            color="dark"
+            class="full-width"
+            icon-right="login"
+            outline
+            rounded
+            :to="{ name: 'login' }"
           />
         </div>
       </div>
@@ -66,11 +89,13 @@ export default defineComponent({
   setup () {
     const router = useRouter()
     const { register } = useAuthUser()
-
+    const isPwd = ref(true)
+    const isPwdConfirm = ref(true)
     const form = ref({
       name: '',
       email: '',
-      password: ''
+      password: '',
+      confirmPassword: ''
     })
 
     const handleRegister = async () => {
@@ -86,7 +111,9 @@ export default defineComponent({
     }
     return {
       form,
-      handleRegister
+      handleRegister,
+      isPwd,
+      isPwdConfirm
     }
   }
 })

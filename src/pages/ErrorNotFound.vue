@@ -7,6 +7,9 @@
 
       <div class="text-h2" style="opacity:.4">
         Não há nada aqui!
+          <span class="material-symbols-outlined">
+  rocket_launch
+</span>
       </div>
 
       <q-btn
@@ -14,8 +17,8 @@
         color="white"
         text-color="blue"
         unelevated
-        to="/"
-        label="Go Home"
+        :to="{ name: 'login' }"
+        label="Voltar ao login"
         no-caps
       />
     </div>

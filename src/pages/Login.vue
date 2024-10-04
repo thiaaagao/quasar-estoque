@@ -12,13 +12,21 @@
           standout="bg-blue text-white"
           type="email"
         />
-
         <q-input
           label="Password"
           v-model="form.password"
           standout="bg-blue text-white"
-          type="password"
-        />
+          :type="isPwd ? 'password': 'text'"
+        >
+          <q-icon @click.stop.prevent="pass = null" class="cursor-pointer" />
+          <template v-slot:append>
+            <q-icon
+              :name="isPwd ? 'visibility_off' : 'visibility'"
+              @click="isPwd = !isPwd"
+              class="cursor-pointer"
+            />
+          </template>
+        </q-input>
         <!-- Input -->
         <!-- Btn Login-->
         <!-- Btn register -->
@@ -64,7 +72,7 @@ export default defineComponent({
 
   setup () {
     const router = useRouter()
-
+    const isPwd = ref(true)
     const { login } = useAuthUser()
 
     const form = ref({
@@ -83,7 +91,8 @@ export default defineComponent({
 
     return {
       form,
-      handleLogin
+      handleLogin,
+      isPwd
     }
   }
 })

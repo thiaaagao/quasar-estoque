@@ -97,6 +97,9 @@ export default defineComponent({
       password: '',
       confirmPassword: ''
     })
+    const passwordMatch = () => {
+      return this.password === this.confirmPassword
+    }
 
     const handleRegister = async () => {
       try {
@@ -113,7 +116,8 @@ export default defineComponent({
       form,
       handleRegister,
       isPwd,
-      isPwdConfirm
+      isPwdConfirm,
+      passwordMatch
     }
   }
 })

@@ -35,7 +35,7 @@
 
         <q-input
           label="Confirm your password"
-          v-model="form.confirmPassword"
+          v-model="confirmPassword"
           standout="bg-blue text-white"
           :type="isPwdConfirm ? 'password' : 'text'"
         >
@@ -87,6 +87,7 @@ export default defineComponent({
   name: 'PageRegister',
 
   setup () {
+    const confirmPassword = ref('')
     const router = useRouter()
     const { register } = useAuthUser()
     const isPwd = ref(true)
@@ -94,8 +95,7 @@ export default defineComponent({
     const form = ref({
       name: '',
       email: '',
-      password: '',
-      confirmPassword: ''
+      password: ''
     })
     const passwordMatch = () => {
       return this.password === this.confirmPassword
@@ -109,15 +109,19 @@ export default defineComponent({
           query: { email: form.value.email }
         })
       } catch (error) {
-        alert(error)
+        // console.error(error)
+      // console.error(form.value)
+        console.error(form.value.api)
       }
     }
+
     return {
       form,
       handleRegister,
       isPwd,
       isPwdConfirm,
-      passwordMatch
+      passwordMatch,
+      confirmPassword
     }
   }
 })

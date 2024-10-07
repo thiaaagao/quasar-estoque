@@ -8,7 +8,7 @@
       <q-separator dark inset />
 
       <q-card-section class="text-h6">
-        <!--div class="text-h8"><strong>Email:</strong> {{ $route.query.email }}</!--div-->
+        <div class="text-h8"><strong>Email:</strong> {{ $route.query.email }}</div>
           <div class="text-subtitle">Por gentileza, confirme a ativação do acesso através do email cadastrado: <strong>{{ $route.query.email }}</strong></div>
       </q-card-section>
 
